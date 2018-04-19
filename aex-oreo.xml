@@ -7,11 +7,8 @@
           clone-depth="1" />
 
   <!-- Incompitable projects -->
-  <!-- <remove-project path="hardware/qcom/audio-caf/msm8916" />
-  <remove-project path="vendor/qcom/opensource/dataservices" /> -->
-
-  <!-- Qcom Common -->
-  <!-- <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" clone-depth="1" /> -->
+  <remove-project name="android_hardware_qcom_audio"/>
+  <remove-project name="android_vendor_qcom_opensource_dataservices"/>
 
   <!-- O7 -->
   <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="on7"/>
@@ -104,7 +101,7 @@
   <remove-project name="device/sample" />
 
   <!-- Toolchain repos -->
-<!--   <remove-project name="platform/prebuilts/clang/host/darwin-x86"/>
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86"/>
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
@@ -113,7 +110,7 @@
   <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/gdb/darwin-x86" />
   <remove-project name="platform/prebuilts/go/darwin-x86" />
-  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" /> -->
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/intel/audio_media" />
