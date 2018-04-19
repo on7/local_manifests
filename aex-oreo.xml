@@ -3,14 +3,15 @@
 
   <remote  name="on7"
           fetch="https://github.com/on7"
-          revision="lineage-15.1" />
+          revision="lineage-15.1"
+          clone-depth="1" />
 
   <!-- Incompitable projects -->
   <remove-project name="LineageOS/android_hardware_qcom_audio"/>
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices"/>
 
   <!-- Qcom Common -->
-  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1"/>
+  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" clone-depth="1" />
 
   <!-- O7 -->
   <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="on7"/>
@@ -18,11 +19,11 @@
 
   <!-- Samsung MSM8916 Common Repos -->
   <project path="device/samsung/msm8916-common" name="android_device_samsung_msm8916-common" groups="device" remote="on7"/>
-  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" groups="device" remote="github" revision="lineage-15.1"/> 
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" groups="device" remote="github" revision="lineage-15.1" clone-depth="1" /> 
 
   <!-- Dependencies -->
-  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.1"/>
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.1"/>
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.1" clone-depth="1" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.1" clone-depth="1" />
 
   <!-- Samsung Hardware Repo -->
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-15.1" />
