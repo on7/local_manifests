@@ -7,8 +7,8 @@
           clone-depth="1" />
 
   <!-- Incompitable projects -->
-  <!-- <remove-project name="LineageOS/android_hardware_qcom_audio"/> -->
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices"/>
+  <remove-project path="hardware/qcom/audio-caf/msm8916" />
+  <remove-project path="vendor/qcom/opensource/dataservices" />
 
   <!-- Qcom Common -->
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" clone-depth="1" />
