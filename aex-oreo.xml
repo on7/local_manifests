@@ -32,7 +32,7 @@
   <project path="vendor/samsung" name="android_vendor_samsung" groups="device" remote="on7"/>
 
   <!-- HardWare QCOM -->
-  <remove-project name="hardware/qcom/audio-caf/apq8084" />
+  <!-- <remove-project name="hardware/qcom/audio-caf/apq8084" />
   <remove-project name="hardware/qcom/audio-caf/msm8952" />
   <remove-project name="hardware/qcom/audio-caf/msm8960" />
   <remove-project name="hardware/qcom/audio-caf/msm8974" />
@@ -52,7 +52,7 @@
   <remove-project name="hardware/qcom/media-caf/msm8974" />
   <remove-project name="hardware/qcom/media-caf/msm8994" />
   <remove-project name="hardware/qcom/media-caf/msm8996" />
-  <remove-project name="hardware/qcom/media-caf/msm8998" />
+  <remove-project name="hardware/qcom/media-caf/msm8998" /> -->
 
   <!-- Device repos -->
   <remove-project name="device/asus/fugu" />
