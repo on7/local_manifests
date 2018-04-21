@@ -19,8 +19,8 @@
   <project path="vendor/qcom/opensource/dataservices" name="Galaxy-MSM8916/android_vendor_qcom_opensource_dataservices" revision="lineage-15.1" remote="Galaxy-MSM8916"/>
 
   <!-- O7 -->
-  <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="on7"/>
-  <project path="device/samsung/o7prolte" name="android_device_samsung_o7prolte" groups="device" remote="on7"/>
+  <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="on7" revision="AEX-O"/>
+  <project path="device/samsung/o7prolte" name="android_device_samsung_o7prolte" groups="device" remote="on7" revision="AEX-O"/>
 
   <!-- Samsung MSM8916 Common Repos -->
   <project path="device/samsung/msm8916-common" name="android_device_samsung_msm8916-common" groups="device" remote="on7"/>
