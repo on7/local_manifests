@@ -39,9 +39,6 @@
   <!-- Vendor Trees For All Device Trees -->
   <project path="vendor/samsung" name="android_vendor_samsung" groups="device" remote="on7"/>
 
-  <!-- cts -->
-  <remove-project name="platform/cts" />
-
   <!-- Device repos -->
   <remove-project name="device/google/accessory/arduino" />
   <remove-project name="device/google/accessory/demokit" />
