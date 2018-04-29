@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="on7"
-          fetch="https://github.com/on7"
-          revision="lineage-15.1"
-          clone-depth="1" />
-
   <remote name="Galaxy-MSM8916"
-          fetch="https://github.com"
+          fetch="https://github.com/Galaxy-MSM8916"
           review="review.msm8916.com"
           revision="lineage-15.1"
           clone-depth="1" />
 
   <!-- Modified caf and other projects -->
   <remove-project name="LineageOS/android_hardware_qcom_audio"/>
-  <project path="hardware/qcom/audio-caf/msm8916" name="Galaxy-MSM8916/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8916" remote="Galaxy-MSM8916"/>
+  <project path="hardware/qcom/audio-caf/msm8916" name="Galaxy-MSM8916/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8916" remote="github"/>
 
   <!-- Qcom Common -->
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" clone-depth="1"/>
 
   <!-- On7 -->
-  <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="on7" revision="RR-O"/>
-  <project path="device/samsung/o7prolte" name="android_device_samsung_o7prolte" groups="device" remote="on7" revision="RR-O"/>
+  <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/o7prolte" name="android_device_samsung_o7prolte" groups="device" remote="Galaxy-MSM8916"/>
 
   <!-- Samsung MSM8916 Common Repos -->
-  <project path="device/samsung/msm8916-common" name="android_device_samsung_msm8916-common" groups="device" remote="on7"/>
+  <project path="device/samsung/msm8916-common" name="android_device_samsung_msm8916-common" groups="device" remote="Galaxy-MSM8916"/>
   <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" groups="device" remote="github" revision="lineage-15.1" clone-depth="1" />
+
+  <!-- arm-eabi-7.2 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="Galaxy-MSM8916/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master" clone-depth="1"/>
 
   <!-- Dependencies -->
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.1" clone-depth="1" />
@@ -35,10 +33,10 @@
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-15.1" />
 
   <!-- Common Samsung MSM8916 Kernel -->
-  <project path="kernel/samsung/msm8916" name="android_kernel_samsung_msm8916" remote="on7"/>
+  <project path="kernel/samsung/msm8916" name="android_kernel_samsung_msm8916" remote="Galaxy-MSM8916"/>
 
   <!-- Vendor Trees For All Device Trees -->
-  <project path="vendor/samsung" name="android_vendor_samsung" groups="device" remote="on7"/>
+  <project path="vendor/samsung" name="android_vendor_samsung" groups="device" remote="Galaxy-MSM8916"/>
 
   <!-- Device repos -->
   <remove-project name="device/common" />
