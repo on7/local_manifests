@@ -8,8 +8,8 @@
           clone-depth="1" />
   <remote name="LineageOS"
           fetch="https://github.com/LineageOS"
-          revision="lineage-15.1"
           clone-depth="1" />
+          
   <!-- Modified caf and other projects -->
   <remove-project name="LineageOS/android_hardware_qcom_audio"/>
   <remove-project name="LineageOS/android_hardware_qcom_display"/>
@@ -44,7 +44,7 @@
   <project path="kernel/samsung/msm8916" name="android_kernel_samsung_msm8916" remote="Galaxy-MSM8916"/>
 
   <!-- Vendor Trees For All Device Trees -->
-  <project path="vendor/samsung" name="android_vendor_samsung" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8916"/>
 
   <!-- Device repos -->
   <remove-project name="device/common" />
