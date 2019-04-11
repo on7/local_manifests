@@ -19,9 +19,6 @@
   <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-16.0-caf-8916" remote="LineageOS" />
   <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-16.0-caf-8916" remote="LineageOS" />
 
-  <!-- Qcom Common -->
-  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-16.0" clone-depth="1"/>
-
   <!-- On7 -->
   <project path="device/samsung/o7-common" name="android_device_samsung_o7-common" groups="device" remote="Galaxy-MSM8916"/>
   <project path="device/samsung/o7prolte" name="android_device_samsung_o7prolte" groups="device" remote="Galaxy-MSM8916"/>
